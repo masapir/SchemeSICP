@@ -25,7 +25,7 @@ http://www.gnu.org/software/mit-scheme/
 #####Edwin Buffers#####
 * `control-x, b` switches buffers
 * `control-x, b, TUTORIAL` for tutorial
-* `control-x, b /*scheme/*` to get evaluation buffer
+* `control-x, b *scheme*` to get evaluation buffer
 * `control-x, control-b` to list buffers
 * `control-x, 1` to get rid of buffer list
 
