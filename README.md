@@ -37,4 +37,4 @@ http://www.gnu.org/software/mit-scheme/
 
 ####References####
 
-* Abelson & Sussman, Structure and Interpretation of Computer Programs (`https://mitpress.mit.edu/sicp/full-text/book/book.html`)
+* Abelson & Sussman, Structure and Interpretation of Computer Programs (https://mitpress.mit.edu/sicp/full-text/book/book.html)
