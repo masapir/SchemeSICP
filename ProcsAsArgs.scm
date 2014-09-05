@@ -14,6 +14,10 @@
 (define (inc j)
   (+ j 1))
 
+;;; cube(x) = x^3
+
+(define (cube x)
+    (* x x x))
   
 ;;; Sum of cubes of integers [a, b]
 
