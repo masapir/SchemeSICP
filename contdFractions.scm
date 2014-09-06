@@ -34,18 +34,6 @@
   (helper n d k (/ (n k) (d k))))
 
 
-;;;  NB. To have an iterative process, we want to carry
-;;;      the answer at each iteration.  Here we do that
-;;;      with the variable fraction.  That means at the
-;;;      first iteration fraction must have the value
-;;;      (n k) / (d k).  After that, each iteration must
-;;;      update the value of fraction so that it is current--
-;;;      namely fraction(i) is added to D_(i-1) and that sum
-;;;      divides N_(i-1).  
-;;;
-;;;      Could we have a recursive process without the additional variable 'index'?
-
-
 ;;;  Ex. 1.38 p. 71
 ;;;  Euler's continued fraction expansion for e - 2.
 ;;;  N(i) = 1 for all i
