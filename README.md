@@ -1,7 +1,7 @@
-PlayingScheme
+Scheme / SICP
 =============
 
-Learning Scheme with exercises / small projects.
+Small projects in Scheme from SICP.
 
 
 ## MIT/GNU Scheme & Docs ##
