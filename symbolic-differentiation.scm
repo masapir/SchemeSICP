@@ -96,3 +96,41 @@
 	  (deriv (base exp) var)))
 	(else
 	 (error "unknown expression type -- DERIV" exp))))
+	 
+	 ;;;  Selectors, predicate, constructor:
+
+	 ;;;  exponential? checks if exp has form of an exponential
+	 ;;;  exponand returns the power to which base is raised in exp
+	 ;;;  make-exponential returns expression of base to power of exponand
+	 ;;;  base returns base of exp
+
+	 ;;;  an exponential will have the form: (^ base power)
+
+
+	 (define (exponentiation? exp)
+	   (and (pair? exp) (eq? (car exp) '^)))
+
+	 (define (base exp)
+	   (cadr exp))
+
+	 (define (exponent exp)
+	   (caddr exp))
+
+	 (define (make-exponentiation base power)
+	   (cond ((=number? power 0) 1)
+	 	((=number? power 1) base)
+	 	(else (list '^ base power))))
+
+
+	 ;;; test
+
+	 (deriv '(^ x 3) 'x)  ;Value 16: (* 3 (^ x 2))
+
+	 (deriv '(^ x 3) 'x)
+
+	 (deriv '(^ x 1) 'x)
+
+	 (deriv '(^ x 5) 'x)
+
+	 (deriv '(* 5 (^ x 6)) 'x)
+	 
